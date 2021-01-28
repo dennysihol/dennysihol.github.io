@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+/* CSS untuk di index.html */
+
+body {
+    width: 100%;
+    background-image: url(./img/stage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+body img {
+    height: 100%;
+}
+
+header {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#logo img {
+    width: 150px;
+    height: 150px;
+}
+
+section {
+    text-align: center;
+}
+
+#keterangan {
+    height: 150px;
+    background-color: #2596be;
+    margin: 5% 20%;
+    padding-top: 100px;    
+    border: 1px solid #2596be;
+    border-radius: 50px;
+    -webkit-box-shadow: 13px 18px 23px 1px rgba(45,140,207,1);
+    -moz-box-shadow: 13px 18px 23px 1px rgba(45,140,207,1);
+    box-shadow: 13px 18px 23px 1px rgba(45,140,207,1);
+}
+
+#keterangan p {
+    font-size: 18px;
+    color: honeydew;
+}
+
+.mulai {
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    background-color: aqua;
+    color: rgb(10, 10, 10);
+    border: 3px solid aqua;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mulai:hover {
+    background-color:  rgb(10, 10, 10);
+    color: aqua;
+    border: 3px solid rgb(10, 10, 10);
+}
+
+/* CSS untuk di games.html */
+
+section {
+    text-align: center;
+}
+
+#gambar {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to bottom, #ffffff 41%, #000066 102%);
+    margin: 10px 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    border: 1px solid white;
+    border-radius: 50px;
+    -webkit-box-shadow: 11px 17px 16px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 17px 16px 4px rgba(0,0,0,0.75);
+    box-shadow: 11px 17px 16px 4px rgba(0,0,0,0.75);
+}
+
+#soal {
+    height: 100%;
+}
+
+.hint {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+#timer {
+    position: absolute;
+    font-size: 50px;
+    right: 20px;
+    margin-right: 30px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(156, 38, 38);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#jawaban {
+    margin-top: 30px;
+    height: 30px;
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#ambilJawaban {
+    height: 30px;
+    width: 100px;
+    background-color: aqua;
+    color: rgb(10, 10, 10);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#ambilJawaban:hover {
+    background-color:  rgb(10, 10, 10);
+    color: aqua;
+    border: 3px solid rgb(10, 10, 10);
+}

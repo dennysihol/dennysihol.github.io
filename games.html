@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>WHO IS IT</title>
+</head>
+<body onload="buildImage()">
+    <header>
+        <div id="logo">
+            <img src="./img/logo.png" alt="this is logo"/>
+        </div>
+    </header>
+    <section>
+        <div id="gambar">
+            <div id="timer"></div>
+            <!-- <img src="./img/soal/soal 1.jpg" id="soal" alt="ini soal"/> -->
+            <p class="hint" id="hint"></p>
+        </div>
+        <div>
+            <input type="text" id="jawaban" placeholder="nama tokoh terkenal">
+            <input type="submit" value="submit" id="ambilJawaban" onclick="getAnswer()">
+        </div>
+    </section>    
+</body>
+<script src="./app.js"></script>
+</html>
