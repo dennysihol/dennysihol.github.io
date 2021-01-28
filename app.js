@@ -39,7 +39,8 @@ function countdown() {
 }
 
 function doSomething() {
-    console.log("Waktu Habis");
+    alert(`WAKTU HABIS!!!, JAWABAN YANG BENAR ADALAH "${obj[index].jawaban}"`)
+    changeImage()
 }
 
 function buildImage() {
@@ -58,18 +59,18 @@ function changeImage(){
 }
 
 
+
 function getAnswer() {
-    let answer = document.getElementById('jawaban').value
+    let answer = document.getElementById('jawaban').value.toLowerCase();
     if (answer === obj[index].jawaban){
         counterBenar++
         alert("Jawaban benar")
         changeImage()
-        countdown().reload
+        countdown()
 
     } else {
-        alert(`Jawaban Salah, Yang benar adalah ${obj[index].jawaban}`)
+        alert(`Jawaban Salah, Yang benar adalah "${obj[index].jawaban}"`)
         changeImage()
-        countdown().reload
+        countdown()
     }
-
 }
