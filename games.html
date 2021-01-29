@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/logo.ico">
     <title>WHO IS IT</title>
 </head>
 <body onload="buildImage()">
@@ -24,6 +25,14 @@
             <input type="text" id="jawaban" placeholder="nama tokoh terkenal">
             <input type="submit" value="submit" id="ambilJawaban" onclick="getAnswer()">
         </div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="modalHasil"></p>
+            </div>
+          
+          </div>
     </section>    
 </body>
 <script src="./app.js"></script>
