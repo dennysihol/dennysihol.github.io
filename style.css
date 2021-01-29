@@ -153,20 +153,25 @@ section {
     background: linear-gradient(to bottom, #ffffff 41%, #000066 102%);
     font-size: 50px;
     margin: auto;
-    padding: 20px;
+    padding-top: 10px;
     border: 1px solid #888;
     width: 80%;
-    height: 200px;
+    height: 600px;
     border: 1px solid white;
     border-radius: 50px;
     -webkit-box-shadow: 11px 17px 16px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: 11px 17px 16px 4px rgba(0,0,0,0.75);
     box-shadow: 11px 17px 16px 4px rgba(0,0,0,0.75);
   }
+
+  #modalHasil {
+      padding-top: 200px;
+  }
   
   /* The Close Button */
   .close {
     color: #aaaaaa;
+    padding-right: 50px;
     float: right;
     font-size: 28px;
     font-weight: bold;
