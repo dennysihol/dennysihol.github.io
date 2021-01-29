@@ -151,19 +151,27 @@ function buildImage() {
 function changeImage(){
     let img = document.getElementById('gambar').getElementsByTagName('img')[0]
     index++;
+    index = index % obj.length; // This is for if this is the last image then goto first image
     img.src = obj[index].nama
     document.getElementById('gambar').appendChild(img);
     let hint = obj[index].hint
     document.getElementById('hint').innerHTML = hint
 }
 
-let inputJawaban = document.getElementById('jawaban')
+function enterKey() {
 
-inputJawaban.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-        document.getElementById("ambilJawaban").click();        
-    }        
-})  
+    let inputJawaban = document.getElementById('jawaban')
+
+    inputJawaban.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("ambilJawaban").click();        
+        }        
+    })
+
+}
+
+enterKey()
 
 function getAnswer() {
     let answer = document.getElementById('jawaban').value.toLowerCase()    
