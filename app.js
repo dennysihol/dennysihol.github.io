@@ -1,4 +1,4 @@
-let timeLeft = 5;
+let timeLeft = 60;
 let elem = document.getElementById('timer');
 let timerId = setInterval(countdown, 1000);
 let counterBenar = 0
